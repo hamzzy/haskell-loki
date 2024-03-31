@@ -33,8 +33,85 @@ ghc-options:
 - -Wpartial-fields
 - -Wredundant-constraints
 
+
 library:
   source-dirs: src
+  dependencies:
+    - deepseq
+    - colourista
+    - effectful
+    - effectful-core
+    - monad-time-effectful
+    - log-base
+    - log-effectful
+    - lucid-aria
+    - Unique
+    - aeson
+    - monad-time
+    - wai-log
+    - aeson-qq
+    - async
+    - base
+    - base64
+    - cache >= 0.1.3.0
+    - case-insensitive
+    - clock
+    - co-log
+    - co-log-core
+    - containers
+    - safe-exceptions
+    - cryptonite
+    - bytestring
+    - data-default
+    - deriving-aeson
+    - dotenv
+    - envy
+    - errors
+    - wai-extra
+    - extra
+    - fmt
+    - generic-lens
+    - hspec
+    - http-api-data
+    - lens
+    - lens-aeson
+    - megaparsec
+    - optics-core
+    - mtl
+    - safe
+    - optics-th
+
+    - random
+    - relude >= 1.2.0.0
+    - resource-pool
+    - resourcet
+    - scientific
+    - http-types
+    - servant
+    - text
+    - text-conversions
+    - text-display
+    - time
+    - transformers
+    - transformers-except
+    - unordered-containers
+    - valor >= 1.0.0.0
+    - vector
+    - wai
+    - warp
+    - witch
+    - wreq
+    - xxhash
+    - template-haskell
+    - yaml
+    - pretty-relative-time
+    - neat-interpolation
+    - PyF
+    - pretty-simple
+    - directory
+    - network-uri
+    - hspec-expectations-json
+    - text-time
 
 executables:
   haskell-loki-exe:
