@@ -69,17 +69,17 @@ callApi level message tsEnv = do
   print (resp ^. responseStatus)
 
 
-customLevel :: String ->  String -> TalstackEnv -> IO ()
+customLevel :: String ->  String -> Env -> IO ()
 customLevel level message tsEnv = callApi level message  tsEnv
 
-errorLog :: String -> TalstackEnv -> IO ()
+errorLog :: String -> Env -> IO ()
 errorLog message tsEnv = customLevel "error" message tsEnv
 
-infoLog :: String -> TalstackEnv -> IO ()
+infoLog :: String -> Env -> IO ()
 infoLog message tsEnv = customLevel "info"  message tsEnv
 
-warnLog :: String -> TalstackEnv -> IO ()
+warnLog :: String -> Env -> IO ()
 warnLog message tsEnv = customLevel "warn"  message tsEnv
 
-debugLog :: String -> TalstackEnv -> IO ()
+debugLog :: String -> Env -> IO ()
 debugLog message tsEnv = customLevel "debug" message tsEnv
